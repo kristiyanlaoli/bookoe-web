@@ -1,8 +1,15 @@
-# React + Vite
+# Bookoe Web
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple website that lists books. This website is made by ReactJs, and the UI is made by Tailwinds CSS. Databooks are obtained by using an API integration. Links on this web are managed by routers. This website supports the responsive design. So, all devices can access this website comfortably.
 
-Currently, two official plugins are available:
+Before running this project, you should install the project on your computer with the following command:.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```bash
+npm install
+```
+
+Then, the project can run with the following command.
+
+```bash
+npm run dev
+```
