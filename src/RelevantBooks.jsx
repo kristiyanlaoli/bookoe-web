@@ -24,18 +24,22 @@ const RelevantBooks = () => {
   const books = databooks.slice(0, 4);
 
   const book = books.map((books, index) => (
-    <div key={index} className="grid w-full mt-10 ">
+    <div key={index} className="grid w-full mt-6 sm:mt-2">
+         
       <img
-        className="rounded-lg w-full"
+        className="border-2 border-primary rounded-lg h-[400px] md:h-[250px] xl:h-[300px] w-full object-cover"
         src={books.image_url}
         alt={books.title}
       />
-      <div className="py-auto grid items-between">
-        <p className="text-md font-bold">{books.title}</p>
-        <p className="font-bold text-md text-slate-500 mb-1">
-          <span className="font-semibold">by</span> {books.author.name}
-        </p>
-        <RatingStars value={books.rating} />
+
+      <div className="pt-2 grid items-between">
+        <div className="sm:h-[150px]">
+          <p className="text-md font-bold line-clamp-3">{books.title}</p>
+          <p className="font-bold text-md text-slate-500 my-2">
+            <span className="font-semibold">by</span> {books.author.name? books.author.name : "unknown" }
+          </p>
+          <RatingStars value={books.rating} />
+        </div>
         <div className="mt-4">
           <ReadBookButton to={`books/${books.id}`}>Read Book</ReadBookButton>
         </div>
@@ -45,7 +49,7 @@ const RelevantBooks = () => {
 
   return (
     <>
-      <div className="grid sm:grid-cols-2 md:flex md:justify-between sm:gap-10 mx-4 xl:mx-24 mt-8 mb-28">
+      <div className="mx-4 mt-4 sm:mt-8 mb-10 grid sm:grid-cols-2 sm:gap-10 md:grid md:grid-cols-4 xl:mx-24">
         {book}
       </div>
     </>
