@@ -23,11 +23,11 @@ const LatestBook = () => {
     fetchData();
   }, []);
 
-  const books = databooks
+  const books = databooks;
 
   const book = books.map((books, index) => (
     <div key={index} className="grid w-full mt-6 sm:mt-2">
-            <div className="bg-primary h-8 px-3 my-0 m-0 rounded-r-3xl grid items-center w-[fit-content] relative top-16">
+      <div className="bg-primary h-8 px-3 my-0 m-0 rounded-r-3xl grid items-center w-[fit-content] relative top-16">
         <p className="text-white">
           {" "}
           <DateFormater date={books.created_at}></DateFormater>
@@ -43,12 +43,13 @@ const LatestBook = () => {
         <div className="sm:h-[150px]">
           <p className="text-md font-bold line-clamp-3">{books.title}</p>
           <p className="font-bold text-md text-slate-500 my-2">
-            <span className="font-semibold">by</span> {books.author.name? books.author.name : "unknown" }
+            <span className="font-semibold">by</span>{" "}
+            {books.author.name ? books.author.name : "unknown"}
           </p>
           <RatingStars value={books.rating} />
         </div>
         <div className="mt-4">
-          <ReadBookButton to={`books/${books.id}`}>Read Book</ReadBookButton>
+          <ReadBookButton to={`/books/${books.id}`}>Read Book</ReadBookButton>
         </div>
       </div>
     </div>

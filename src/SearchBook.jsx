@@ -48,12 +48,13 @@ const SearchBook = (props) => {
           <div className="sm:h-[150px]">
             <p className="text-md font-bold line-clamp-3">{books.title}</p>
             <p className="font-bold text-md text-slate-500 my-2">
-              <span className="font-semibold">by</span> {books.author.name? books.author.name : "unknown" }
+              <span className="font-semibold">by</span>{" "}
+              {books.author.name ? books.author.name : "unknown"}
             </p>
             <RatingStars value={books.rating} />
           </div>
           <div className="mt-4">
-            <ReadBookButton to={`books/${books.id}`}>Read Book</ReadBookButton>
+            <ReadBookButton to={`/books/${books.id}`}>Read Book</ReadBookButton>
           </div>
         </div>
       </div>

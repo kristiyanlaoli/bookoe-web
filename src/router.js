@@ -20,19 +20,13 @@ const router = createBrowserRouter([
         path: "latest",
         Component: LatestPage,
       },
-      { path: "/latest/books/:id", Component: SingleBookPage },
       {
         path: "top-picks",
         Component: TopPicksPage,
       },
-      { path: "/top-picks/books/:id", Component: SingleBookPage },
       {
         path: "search/:keyword",
         Component: SearchPage,
-      },
-      {
-        path: "search/:keywor/books/:id",
-        Component: SingleBookPage,
       },
       {
         path: "books/:id",

@@ -28,21 +28,21 @@ const ListBooks = () => {
   const book = books.map((books, index) => (
     <div
       key={index}
-      className="sm:grid sm:grid-cols-2 sm:gap-2 md:gap-4 xl:gap-6 sm:max-h-[350px] sm:mb-8"
+      className="sm:grid sm:grid-cols-2 sm:gap-2 md:gap-1 xl:gap-4 sm:max-h-[350px] sm:mb-8"
     >
       <img
-        className="border-2 border-primary rounded-lg sm:mb-20 object-cover w-full h-[450px] sm:h-[350px]"
+        className="border-2 border-primary rounded-lg sm:mb-2 object-cover w-full h-[450px] sm:h-[350px] md:h-[270px] lg:h-[350px]"
         src={books.image_url}
         alt={books.title}
       />
-      <div className="sm:px-2 pt-4 sm:pt-0 sm:grid sm:content-between sm:mb-20 sm:max-h-[350px]">
+      <div className="sm:px-2 pt-4 sm:pt-0 sm:grid sm:content-between sm:mb-2 sm:max-h-[350px]">
         <div>
-          <p className="text-xl font-bold line-clamp-4">{books.title}</p>
-          <p className="font-bold text-md text-slate-500 py-2 my-2">
+          <p className="text-lg font-bold line-clamp-4 md:text-base md:line-clamp-3 xl:line-clamp-4">{books.title}</p>
+          <p className="font-bold text-lg text-slate-500 py-2 my-2 md:text-sm">
             <span className="font-semibold">by</span> {books.author.name}
           </p>
           <RatingStars value={books.rating} />
-          <p className="text-black text-sm pt-2 line-clamp-4">{books.synopsis}</p>
+          <p className="text-black text-sm pt-2 line-clamp-4 md:line-clamp-2 xl:line-clamp-4">{books.synopsis}</p>
         </div>
         <div className="mt-4">
           <ReadBookButton to={`books/${books.id}`}>Read Book</ReadBookButton>
@@ -54,7 +54,7 @@ const ListBooks = () => {
   return (
     <>
       <div className="mx-4 rounded-md mt-10 xl:mx-24">
-        <div className="wrap grid grid-cols-1 gap-4 md:grid-cols-2">{book}</div>
+        <div className="wrap grid grid-cols-1 gap-4 xl:gap-8 md:grid-cols-2">{book}</div>
       </div>
     </>
   );

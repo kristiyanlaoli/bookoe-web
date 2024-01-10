@@ -47,7 +47,7 @@ const TopPicksBook = () => {
           <RatingStars value={books.rating} />
         </div>
         <div className="mt-4">
-          <ReadBookButton to={`books/${books.id}`}>Read Book</ReadBookButton>
+          <ReadBookButton to={`/books/${books.id}`}>Read Book</ReadBookButton>
         </div>
       </div>
     </div>
