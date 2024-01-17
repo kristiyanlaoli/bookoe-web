@@ -42,7 +42,7 @@ const ListBooks = () => {
             <span className="font-semibold">by</span> {books.author.name}
           </p>
           <RatingStars value={books.rating} />
-          <p className="text-black text-sm pt-2 line-clamp-4 md:line-clamp-2 xl:line-clamp-4">{books.synopsis}</p>
+          <p className="text-black text-sm pt-2 line-clamp-4 md:line-clamp-2 lg:line-clamp-4">{books.synopsis}</p>
         </div>
         <div className="mt-4">
           <ReadBookButton to={`books/${books.id}`}>Read Book</ReadBookButton>
