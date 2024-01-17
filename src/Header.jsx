@@ -18,7 +18,7 @@ const Header = () => {
     <>
       <header className="mt-6 py-2 md:flex md:justify-between md:mx-4 xl:mx-24">
         <div className="flex justify-center ">
-          <img src="/src/img/header/logo.svg" alt="" className="mr-4" />
+          <img src="/img/header/logo.svg" alt="" className="mr-4" />
           <div className="flex-col my-auto">
             <h1 className="font-bold text-4xl text-black">Bookoe</h1>
             <p>Rekomendasi Bukumu</p>

@@ -61,33 +61,3 @@ const ListBooks = () => {
 };
 
 export default ListBooks;
-
-/* <div className="grid grid-cols-2 max-h-[400px] mb-16">
-<img
-  className="rounded-lg mb-20 max-h-[400px]"
-  src="/src/img/hero/book1-rekomendation.png"
-  alt=""
-/>
-<div className="px-2 grid content-between mb-20 max-h-[400px]">
-  <div>
-    <p className="text-4xl font-bold">
-      I Want A Better
-      <br />
-      Ccatastrophe
-    </p>
-    <p className="font-bold text-xl text-slate-500 py-8">
-      Andrew Boyd
-    </p>
-    <p className="text-black text-xl">
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-      Fugit, quasi. Lorem ipsum dolor sit amet consectetur
-      adipisicing elit.
-    </p>
-  </div>
-  <div className="mt-4">
-    <button className="font-base text-primary bg-white border-2 border-primary px-2 py-2 rounded-md w-full">
-      Read book
-    </button>
-  </div>
-</div>
-</div> */

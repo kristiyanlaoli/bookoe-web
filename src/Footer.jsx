@@ -4,7 +4,7 @@ const Footer = () => {
       <div className="py-8 mx-4 xl:mx-24">
         <div className="flex flex-row">
           <div className="flex flex-wrap w-1/2">
-            <img src="/src/img/header/logo.svg" alt="" className="mr-4" />
+            <img src="/img/header/logo.svg" alt="" className="mr-4" />
             <div className="flex-col my-auto">
               <h1 className="font-bold text-4xl text-black">Bookoe</h1>
               <p>Rekomendasi Bukumu</p>

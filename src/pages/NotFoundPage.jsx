@@ -8,15 +8,15 @@ const NotFoundPage = () => {
         <div className="flex justify-center ">
           <img
             className="hidden md:block"
-            src="/src/img/notfoundpage/Books.svg"
+            src="/img/notfoundpage/Books.svg"
             alt=""
           />
           <img
             className="hidden sm:block"
-            src="/src/img/notfoundpage/Books2.svg"
+            src="/img/notfoundpage/Books2.svg"
             alt=""
           />
-          <img src="/src/img/notfoundpage/Books3.svg" alt="" />
+          <img src="/img/notfoundpage/Books3.svg" alt="" />
         </div>
         <div className="text-center">
           <p className="font-bold text-8xl text-primary">404</p>
